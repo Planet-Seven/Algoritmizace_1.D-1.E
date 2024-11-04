@@ -49,6 +49,11 @@ uvnitř značky se může nacházet (a zpravidla se tam i nachází) další htm
 
 `target` - specifikuje, jak se stránka otevře
 
+## Navigace
+`<nav> ... </nav>`
+
+sdružuje dohromady prvky, které slouží jako navigace, typicky jde o nějaké kotvy.
+
 
 ## Obrázek
 `<img src="...">`
@@ -63,3 +68,46 @@ Pozor na nepárovost značky!
 `C:users/pepa/Documents/Mujhtmlprojekt/images/sussybaca.jpg` - absoultní cesta, bude fungovat jen u nás. To nechceme.
 
 `images/sussybaca.jpg` popř. `./images/sussybaca.jpg` - relativní cesta pracuje jen s obsahem aktuální složky, bude fungovat i po jejím přesunutí. To chceme.
+
+# 2. HTML tabulky
+
+## Buňka tabulky
+`<td> ... </td>`
+
+Může obsahovat obrázek, text, seznam ...
+
+## Hlavička tabulky
+`<th> ... </th>`
+
+Používa se stejně jako buňka, umisťujte je však jen do prvního řádku.
+
+## Řádek tabulky
+`<tr> ... </tr>`
+
+Sdružuje dohromady buňky do jednoho řádku. Až na výjimky by mělo platit, že všechny řádky tabulky mají stejný počet buňek.
+
+## Tabulka
+
+`<table> ... </table>`
+
+Sdružuje jednotlivé řadku do celé tabulky. Použití by tedy mohlo vypadat zhruba takto:
+
+```
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+```
