@@ -111,3 +111,31 @@ Sdružuje jednotlivé řadku do celé tabulky. Použití by tedy mohlo vypadat z
   </tr>
 </table>
 ```
+
+## Formuláře a input
+
+# Formulář
+
+`<form> ... </form>`
+
+Ohraničuje jednotlivé položky formuláře.
+
+# Input
+
+`<input type="..." id="..." name="..." value="..." />`
+
+Umožňuje sbírat vstup od uživatele.
+
+`type` - říká, o jaký vstup se jedná. Může mít hodnoty "text" (textové pole), "radio" (výběr z jednoho), "checkbox" (výběr více možností), "button" (tlačítko), "submit" (tlačítko pro odeslání)
+
+`id` - identifikuje prvek v html dokumentu. Budeme ho používat pro popisek (label).
+
+`name` - V HTML dokumentu nehraje roli. Projeví se v odeslaném formuláři.
+
+`value` - to samé jako name, ale říká, jakou hodnotu uvidíme v odeslaných datech. Data se odešlou ve formátu name=value.
+
+# Popisek
+
+`<label for="..." ></label>`
+
+`for` - id prvku, pro který popisek píšeme.
