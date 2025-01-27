@@ -248,3 +248,18 @@ Umožňuje sbírat vstup od uživatele.
   font-size: 24px;
   }
   ```
+
+  ## Barvy a jednotky
+
+  ### Barvy
+
+  Barvy lze specifikovat několika způsoby:
+
+  *	Pojmenované barvy: např. red, blue, green.
+  *	HEX kódy: např. #ff0000 (červená).
+  *	RGB a RGBA: např. rgb(255, 0, 0) nebo rgba(255, 0, 0, 0.5) (poloprůhledná červená).
+  *	HSL a HSLA: např. hsl(0, 100%, 50%) nebo hsla(0, 100%, 50%, 0.5).
+
+  ### Jednotky
+  *	Absolutní: px (pixely), cm (centimetry).
+  *	Relativní: % (relativní k rodičovskému prvku), em a rem (relativní k velikosti písma), vh a vw (relativní k setině rozměru okna)
