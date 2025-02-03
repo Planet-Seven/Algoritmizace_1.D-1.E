@@ -1,0 +1,22 @@
+.box {
+    width: 300px;
+    height: 100px;
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.padding-box {
+}
+  
+.border-box {
+}
+  
+.margin-box {
+}
+  
+.complete-box {
+}
