@@ -263,3 +263,40 @@ Umožňuje sbírat vstup od uživatele.
   ### Jednotky
   *	Absolutní: px (pixely), cm (centimetry).
   *	Relativní: % (relativní k rodičovskému prvku), em a rem (relativní k velikosti písma), vh a vw (relativní k setině rozměru okna)
+
+  ## Box model
+
+  Box model popisuje, jak je každý HTML prvek obalen “krabicí”, kterou tvoří následující vrstvy:
+	1.	Obsah (content): Text nebo jiné prvky uvnitř.
+	2.	Výplň (padding): Prostor mezi obsahem a okrajem.
+	3.	Okraj (border): Ohraničení kolem prvku.
+	4.	Okrajový prostor (margin): Prostor mezi prvkem a ostatními prvky.
+
+  ```css
+  div {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+  }
+  ```
+
+  ## Stylování textu
+
+  ### Barva textu
+
+  ```css
+  color: red;
+  ```
+
+  ### Velikost písma
+
+  ```css
+  font-size: 16px;
+  ```
+
+  ### Zarovnání textu
+
+  ```css
+  text-align: center;
+  ```
