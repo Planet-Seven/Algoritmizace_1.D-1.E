@@ -300,3 +300,91 @@ Umožňuje sbírat vstup od uživatele.
   ```css
   text-align: center;
   ```
+
+  ## Pozicování
+
+  ### Display
+
+  `display` určuje, jak se elementy vykreslují na stránce.
+
+  - `block` - element zabírá celou šířku řádku (např. `<div>`, `<p>`)
+  - `inline` - element zabírá pouze tolik místa, kolik potřebuje (např. `<span>`, `<a>`)
+  - `inline-block` - chová se jako `inline`, ale umožňuje nastavovat rozměry (`width`, `height`)
+  - `none` - element je skrytý a nezabírá žádné místo
+
+  Příklad:
+  ```css
+  .block-element {
+    display: block;
+  }
+  .inline-element {
+    display: inline;
+  }
+  .inline-block-element {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+  }
+  ```
+
+### Position
+
+position určuje, jak je element umístěn na stránce.
+-	static - výchozí hodnota, element je umístěn v běžném toku dokumentu
+-	relative - element je posunut relativně vůči své původní pozici
+-	absolute - element je umístěn relativně k nejbližšímu rodiči s position: relative;, jinak vůči <html>
+-	fixed - element je umístěn vůči oknu prohlížeče a nemění pozici při scrollování
+-	sticky - element se chová jako relative, dokud nedosáhne určité pozice, kde se „přilepí“
+
+Příklad:
+```css
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fixed-box {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 0;
+}
+```
+
+### Float
+
+float umožňuje umístit element na stranu (doprava nebo doleva) a obtečení textem.
+-	left - element bude zarovnán doleva, text jej bude obtékat zprava
+-	right - element bude zarovnán doprava, text jej bude obtékat zleva
+-	none - žádné obtékání
+
+Příklad:
+```css
+.float-left {
+  float: left;
+  width: 50%;
+}
+
+.float-right {
+  float: right;
+  width: 50%;
+}
+```
+
+### Clear
+
+clear se používá k odstranění efektu float.
+-	left - zabrání obtékání levých elementů
+-	right - zabrání obtékání pravých elementů
+-	both - zabrání obtékání z obou stran
