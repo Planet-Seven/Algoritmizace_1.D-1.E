@@ -388,3 +388,58 @@ clear se používá k odstranění efektu float.
 -	left - zabrání obtékání levých elementů
 -	right - zabrání obtékání pravých elementů
 -	both - zabrání obtékání z obou stran
+
+## Pseudoselektory
+
+CSS pseudoselektory umožňují stylovat prvky na základě jejich stavu, pozice nebo interakce s uživatelem, aniž bychom museli přidávat třídy nebo upravovat HTML.
+
+### Stavové pseudoselektory
+
+Tyto selektory reagují na interakci uživatele.
+
+- `:hover` – když je prvek pod kurzorem myši
+- `:active` – když je prvek aktivní (např. držíte tlačítko myší)
+- `:focus` – když má prvek fokus (např. aktivní textové pole)
+
+```css
+button:hover {
+  background-color: lightblue;
+}
+
+input:focus {
+  border-color: green;
+}
+```
+
+### Strukturální pseudoselektory
+
+Slouží pro výběr prvků podle jejich pozice mezi sourozenci.
+
+-	`:first-child` – první potomek
+- `:last-child` – poslední potomek
+- `:nth-child(n)` – n-tý potomek (číslování začíná od 1)
+- `:nth-of-type(n)` – n-tý potomek daného typu (např. druhý `<li>`)
+
+```css
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(3) {
+  color: red;
+}
+```
+
+### Ostatní zajímavé pseudoselektory
+- `::before a ::after` – přidání obsahu před nebo za obsah prvku
+- `:not(selector)` – vybere prvky, které neodpovídají selektoru
+
+```css
+p::before {
+  content: "tento obsah bude přidán ";
+}
+
+a:not(.button) {
+  color: red;
+}
+```
