@@ -443,3 +443,64 @@ a:not(.button) {
   color: red;
 }
 ```
+
+## Animace
+
+
+Pomocí CSS můžeme animovat různé vlastnosti prvků – barvy, pozice, průhlednost a další.
+
+### Přechody (Transitions)
+
+Jednodušší způsob animace změny mezi dvěma stavy.
+
+```css
+button {
+  background-color: blue;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: green;
+}
+```
+
+- transition říká, co se má animovat, jak dlouho a jakým způsobem.
+-	ease, linear, ease-in, ease-out určují typ přechodu.
+
+### Klíčové snímky (Keyframes)
+
+Složitější animace se dělají pomocí definování jednotlivých kroků.
+
+```css
+@keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.box {
+  animation: slide 2s ease-in-out infinite;
+}
+```
+
+-	@keyframes definuje animaci
+-	animation říká, jakou animaci použít, jak dlouho, jak často
+
+#### Animovatelné vlastnosti
+
+Ne všechny vlastnosti lze animovat. Nejčastěji se animují:
+-	color, background-color
+-	opacity, transform, left, top
+-	height, width
+
+
+#### Další parametry animací
+
+- animation-name: jméno animace;
+- animation-duration: délka trvání;
+- animation-delay: zpoždění;
+- animation-iteration-count: kolikrát (např. infinite);
+- animation-direction: normal | reverse | alternate;
